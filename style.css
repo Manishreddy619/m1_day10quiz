@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+
+	background: -webkit-linear-gradient(
+		to right,
+		#7bc6cc,
+		#be93c5
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#7bc6cc,
+		#be93c5
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-image: url('https://c8.alamy.com/comp/R0AT2Y/torn-blue-paper-revealing-question-mark-on-yellow-paper-concept-of-questions-faq-qa-problem-riddle-and-quiz-background-R0AT2Y.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+img,
+.scoreimg {
+	width: 5.5rem;
+	height: 5.2rem;
+	border-radius: 50%;
+}
+
+.img {
+	position: fixed;
+}
+#title {
+	text-align: center;
+	padding: 0.8rem 0;
+	font-size: 3rem;
+	color: rgb(9, 19, 31);
+	background: rgba(49, 189, 182, 0.698);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.rules {
+	text-align: center;
+	margin-top: 5rem;
+}
+.questions {
+	margin: 3rem auto;
+	width: 90vw;
+	padding: 2rem;
+	background: #bdc3c7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#2c3e50,
+		#bdc3c7
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#2c3e50,
+		#bdc3c7
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	cursor: default;
+	border-radius: 1rem;
+	text-align: center;
+}
+#question {
+	margin-bottom: 1rem;
+}
+.option {
+	margin-bottom: 0.5rem;
+	font-size: 1.2rem;
+	border-bottom: solid 0.1rem rgba(0, 0, 255, 0.548);
+	width: 15rem;
+	background: rgb(48, 142, 173);
+	border-radius: 1rem;
+	padding: 5px;
+	margin: 20px auto;
+}
+.option:hover {
+	color: rgba(22, 16, 16, 0.699);
+	cursor: pointer;
+	background-color: blanchedalmond;
+}
+
+ol {
+	position: relative;
+	padding: 0 1.5rem;
+	color: rgb(1, 73, 73);
+}
+span {
+	display: block;
+	padding: 0.1rem 0.7rem;
+	border-radius: 1rem;
+}
+#answer {
+	margin-top: 2.5rem;
+}
+#stat {
+	margin-top: 1.5rem;
+	color: rgb(6, 17, 168);
+}
+.buttons {
+	text-align: center;
+}
+button {
+	padding: 1rem 1.6rem;
+	border: none;
+	outline: none;
+	font-size: 2rem;
+	border-radius: 1.5rem;
+	color: rgba(241, 60, 43, 0.98);
+	background: rgba(125, 39, 133, 0.26);
+	cursor: pointer;
+	font-weight: 600;
+}
+button:hover {
+	background-color: rgba(241, 59, 43, 0.445);
+	color: black;
+}
+button:active {
+	background: lavender;
+}
+#scoreboard,
+#answerBank {
+	width: 20rem;
+	background: rgba(230, 230, 250, 0.77);
+	padding: 2rem;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 5rem;
+	display: none;
+}
+#score-title {
+	margin: 1rem 0;
+}
+#score-btn,
+#check-answer {
+	margin-top: 1rem;
+}
+#score {
+	font-size: 2.5rem;
+}
+#answerBank li {
+	text-align: left;
+	margin-bottom: 0.2rem;
+	font-size: larger;
+}
+#answers {
+	margin-top: 1rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
